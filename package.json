@@ -1,0 +1,19 @@
+{
+  "name": "minimal-cloudflare-reproduction",
+  "version": "1.0.0",
+  "description": "Minimal reproduction case for Cloudflare Sandbox WebSocket bug",
+  "main": "src/worker.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@cloudflare/sandbox": "^0.4.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.43.0",
+    "ws": "^8.18.3"
+  }
+}
