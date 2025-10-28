@@ -37,6 +37,7 @@ client.on('data', (data) => {
   // Write to stdout for Cloudflare to capture
   process.stdout.write(chunk);
   response += chunk;
+  client.end();
 });
 
 client.on('end', () => {
