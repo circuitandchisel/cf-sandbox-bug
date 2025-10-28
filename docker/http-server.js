@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Simple HTTP server for Cloudflare health checks on port 3000
+ * Simple HTTP server for Cloudflare health checks on port 3001
  */
 
 const http = require('http');
@@ -10,8 +10,8 @@ const server = http.createServer((req, res) => {
   res.end(JSON.stringify({ status: 'ok', message: 'Sandbox ready' }));
 });
 
-server.listen(3000, '0.0.0.0', () => {
-  console.log('[HTTP-SERVER] Health check server listening on port 3000');
+server.listen(3001, '0.0.0.0', () => {
+  console.log('[HTTP-SERVER] Health check server listening on port 3001');
 });
 
 // Keep the process alive
